@@ -1,0 +1,171 @@
+body {
+  background-image: url('../../img/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #226CE3;
+  
+}
+
+.alignCenter {
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center; 
+  }
+
+
+.Listbox {
+  border-radius: 60px;
+  font-size: 10px;
+  position: absolute; 
+  top: 45%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 78vh;
+}
+
+
+.RenderBackBlur {
+  border-radius: 60px;
+  font-size: 10px;
+  position: absolute; 
+  top: 45%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 75vh;
+  backdrop-filter: blur(2px);
+  background-image: linear-gradient(to bottom, #22b9e33a,#1431b423);
+  
+}
+
+
+
+.space-around{
+  padding-top: 1vh;
+  display: flex;
+  Justify-content: space-evenly;
+}
+
+.input-container {
+  padding-top: 0.1vh;
+  flex: 0 0 calc(33.33% - 10px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.documento{
+  padding-top: 1vh;
+  gap: 40px;
+  display: flex;
+  Justify-content:center;
+}
+
+select{
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border-color: #226CE3;
+}
+
+
+input {
+  border-radius: 10px;
+  border-color: #226CE3;
+  border-style: solid;
+  width: 316px; 
+  height: 30px;
+  text-align: center;
+}
+
+h1{
+  font-size: 35px;
+}
+
+h2{
+  font-size: 25px;
+}
+
+h3{
+  font-size: 20px;
+}
+
+.custom-button {
+  background-color: #3358FF;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 50px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+.custom-button:hover {
+  background-color: #0026FF;
+}
+
+a{
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+.date-input-container {
+  position: relative;
+}
+
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13px;
+  color: #000000a8;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.date-input-container input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.date-input-container input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+  color: transparent;
+}
+
+
+.date-input-container input[type="date"]:focus::-webkit-datetime-edit-text,
+.date-input-container input[type="date"]:focus::-webkit-datetime-edit-year-field,
+.date-input-container input[type="date"]:focus::-webkit-datetime-edit-month-field,
+.date-input-container input[type="date"]:focus::-webkit-datetime-edit-day-field {
+  color: initial;
+}
+
+.date-input-container input[type="date"]:focus + .placeholder {
+  display: none;
+}
+
+.selected-date {
+  display: block;
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+.placeholder.selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+
